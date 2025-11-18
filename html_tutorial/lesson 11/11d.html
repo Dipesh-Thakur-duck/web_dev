@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profiles</title>
+    <link rel="stylesheet" href="../lesson 11/11d.css">
+    <style>
+      .friend-pic{
+        width:25px;
+        height:25px;
+        border-radius:12px;
+        object-fit:cover;
+      }
+
+      .friends{
+        margin-left:5px;
+        margin-bottom:5px;
+        display:grid;
+        grid-template-columns:25px 1fr;
+        column-gap: 10px;;
+        align-items:center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profiles">
+      <div class="profile">
+        <img src="../lesson_7/cat.jpeg" class="profile-pic">
+        <p class="name">Oliver</p>
+        <div class="friends">
+          <img src="../lesson 9/cats2.jpeg" class="friend-pic">
+          <p class="mutual-friends">2 mutual friends</p>
+        </div>
+        <button class="add-friend-button">Add friend</button>
+      </div>
+      <div class="profile">
+        <img src="../lesson 9/cats1.jpeg" class="profile-pic">
+        <p class="name">Mini</p>
+        <div class="friends">
+          <img src="../lesson 9/cats1.jpeg" class="friend-pic">
+          <p class="mutual-friends">2 mutual friends</p>
+        </div>
+        <button class="add-friend-button">Add friend</button>
+      </div>
+      <div class="profile">
+        <img src="../lesson 9/cats2.jpeg" class="profile-pic">
+        <p class="name">Kailo</p>
+        <div class="friends">
+          <img src="../lesson_7/cat.jpeg" class="friend-pic">
+          <p class="mutual-friends">2 mutual friends</p>
+        </div>
+        <button class="add-friend-button">Add friend</button>
+      </div>
+    </div>
+  </body>
+</html>

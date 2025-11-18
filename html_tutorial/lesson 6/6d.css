@@ -1,0 +1,18 @@
+p{
+  font-family:Montserrat;
+  margin-top:0;
+  margin-bottom:0;
+}
+.model-type{
+  margin-bottom:20px;
+  text-align:center;
+  font-weight:bold;
+  font-size:50px;
+}
+.order-type{
+  text-align:center;
+  font-size:20px;
+}
+.delivery-type{
+  text-decoration:underline;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitter query</title>
+    <style>
+      .query-box{
+        box-shadow:0 0 3px grey;
+        display:inline-block;
+        padding:8px;
+      }
+      .profile-pic{
+        width:50px;
+        height:50px;
+        border-radius:25px;
+        object-fit:cover;
+      }
+      .input-box{
+        border:none;
+        font-weight:bold;
+      }
+      .tweet-button{
+        font-weight:bold;
+        color:white;
+        background-color:rgb(10,102, 194);
+        border:none;
+        padding:5px 13px;
+        border-radius:15px;
+      }
+      .profile-pic,.input-box,.tweet-button{
+        vertical-align:middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="query-box">
+      <img src="../lesson_7/cat.jpeg" class="profile-pic">
+      <input type="text" placeholder="What's happening?" class="input-box">
+      <button class="tweet-button">Tweet</button>
+    </div>
+  </body>
+</html>

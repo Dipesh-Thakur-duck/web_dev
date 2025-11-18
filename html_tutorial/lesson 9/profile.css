@@ -1,0 +1,35 @@
+.profile{
+display:inline-block;
+margin-right:10px;
+width:200px;
+height:300px;
+box-shadow:0 0 3px grey;
+}
+.profile-pic{
+width:200px;
+height:180px;
+object-fit:cover;
+}
+.name,.mutual-friends,.add-friend-button{
+margin-left:3px;
+}
+.name,.mutual-friends{
+margin-top:0;
+margin-bottom:0;
+font-family:Arial;
+}
+.name{
+font-weight:bold;
+margin-top:5px;
+}
+.mutual-friends{
+margin-bottom:8px;
+color:rgb(114, 113, 113);
+}
+.add-friend-button{
+padding:8px 25px;
+color:white;
+background-color:rgb(10,102, 194);
+border:none;
+border-radius:3px;
+}
