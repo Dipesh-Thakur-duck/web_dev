@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Sidebar</title>
+    <link rel="stylesheet" href="./styles-youtube/sidebar.css">
+    <style>
+      @media (min-width:1200px){
+        .sidebar{
+          width:160px;
+        }
+        .sidebar-link{
+          padding-left:10px;
+          flex-direction:row;
+          justify-content:flex-start;
+          gap:15px;
+        }
+        body{
+          padding-left:184px;
+        }
+        .sidebar-link img{
+          height:34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="youtube-sidebar-icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-sidebar-icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-sidebar-icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-sidebar-icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-sidebar-icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-sidebar-icons/library.svg">
+        <div>Library</div>
+      </div>
+    </div>
+  </body>
+</html>

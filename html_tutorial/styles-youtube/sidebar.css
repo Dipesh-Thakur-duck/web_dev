@@ -27,3 +27,23 @@
 .sidebar-link:hover{
   background-color:rgb(235,235,235);
 }
+@media (min-width:1200px){
+  .sidebar{
+    width:180px;
+  }
+  .sidebar-link{
+    padding-left:10px;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:15px;
+  }
+  body{
+    padding-left:204px;
+  }
+  .sidebar-link img{
+    height:34px;
+  }
+  .sidebar-link div{
+    font-size:16px;
+  }
+}
