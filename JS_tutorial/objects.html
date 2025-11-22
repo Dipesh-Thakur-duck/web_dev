@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      //object creating
+      const details = {
+        name: 'Dipesh',
+        age: 21,
+        address: 'Kapan, Kharibot',
+        'faviorate-quote': 'Just win!'
+      }
+
+      //accessing values
+      console.log(details.name)
+      console.log(details['name']) //Bracket notation
+
+      //adding key-value pair
+      details.DOB = '2004-2-25';
+      details['academic-qualification'] = 'High School Diploma'; // we can use '-' with bracket notation
+
+      //objects and functions are values
+
+      const info = {
+        name: 'Dipesh',
+        education: {
+          schooling: 'Tri-jyoti Secondary School',
+          'high-schooling': 'Rai-School',
+          college: 'Texas College of Management and IT'
+        },
+        greeting: function hello(){//method
+          console.log('Hello!')
+        }
+      }
+      const {name} = info; //destructuring
+      const {address, age} = details;
+
+      const message = 'Hello';
+
+      const object5 = {
+        message,//Short-hand property
+        method(){
+          console.log('method');//Short-hand method
+        }
+      }
+    </script>
+  </body>
+</html>

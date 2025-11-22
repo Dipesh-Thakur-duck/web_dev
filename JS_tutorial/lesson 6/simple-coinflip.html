@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      simple-coinflip
+    </title>
+  </head>
+  <body>
+    <script>
+      let random_num = Math.random();
+      let toss = random_num < 0.5 ? 'heads':'tails';
+      let guess = 'heads';
+      let result = guess === toss ? console.log('You win!'):console.log('You lose!');
+    </script>
+  </body>
+</html>

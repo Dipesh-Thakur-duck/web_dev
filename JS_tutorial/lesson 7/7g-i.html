@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      7g-i
+    </title>
+  </head>
+  <body>
+    <script>
+      function convertLength(length, from, to){
+        if(from === 'miles'){
+          if (to === 'km'){
+            const km = 1.6 * length;
+            console.log(`Miles(${length}) => Km(${km})`);
+          }else if (to === 'ft'){
+            const ft = 5280 * length;
+            console.log(`Miles(${length}) => Ft(${ft})`);
+          } else if (to === 'miles'){
+            console.log(`${length} miles`);
+          }
+        } else if (from === 'km'){
+          if (to === 'miles'){
+            const miles = length / 1.6;
+            console.log(`Km(${length}) => Miles(${miles})`);
+          }else if (to === 'ft'){
+            const ft = 3281 * length;
+            console.log(`Km(${length}) => Ft(${ft})`);
+          }else if (to === 'km'){
+            console.log(`${length} km`);
+          }
+        } else if (from === 'ft'){
+          if (to === 'km'){
+            const km = length / 3281;
+            console.log(`Ft(${length}) => Km(${km})`);
+          } else if (to === 'miles'){
+            const miles = length / 5280;
+            console.log(`Ft(${length}) => Miles(${miles})`);
+          }else if (to === 'ft'){
+            console.log(`${length} ft`);
+          }
+        }
+      }
+      convertLength(50, 'miles','km');
+      convertLength(32, 'km', 'miles');
+      convertLength(50, 'km', 'km');
+      convertLength(5, 'miles', 'km');
+      convertLength(5, 'miles', 'ft');
+      convertLength(5, 'km', 'ft');
+    </script>
+  </body>
+</html>

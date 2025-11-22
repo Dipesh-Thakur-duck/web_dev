@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      7d-f
+    </title>
+  </head>
+  <body>
+    <script>
+      function convertToFahrenheit(celsius){
+        const fahrenheit = (celsius * (9/5)) + 32;
+        console.log(`Celsius (${celsius}) => Fahrenheit (${fahrenheit})`);
+      }
+      function convertToCelsius(fahrenheit){
+        const celsius = (fahrenheit - 32) * 5/9;
+        console.log(`Fahrenheit (${fahrenheit} => Celsius (${celsius})`);
+      }
+      function convertTemperature (degrees, unit){
+        if (unit === 'celsius'){
+          const fahrenheit = (degrees * (9/5)) + 32;
+          console.log(`Celsius (${degrees}) => Fahrenheit (${fahrenheit})`);
+        } else if(unit === 'fahrenheit'){
+          const celsius = (degrees - 32) * 5/9;
+          console.log(`Fahrenheit (${degrees} => Celsius (${celsius})`);
+        }
+      }
+      convertToFahrenheit(25);
+      convertToCelsius(86);
+      convertTemperature(25,'celsius');
+      convertTemperature(86,'fahrenheit');
+    </script>
+  </body>
+</html>
